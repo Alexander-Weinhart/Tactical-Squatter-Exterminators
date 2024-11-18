@@ -1,0 +1,15 @@
+REVISION 1:
+-make popup button bigger
+-make merch buttons styled
+-make pictures in each index section
+-no watermark on the picture
+-size the testimonial picture way down
+-2 testimonials for smaller img
+-change merch black Friday to new years
+-bump up font-size on squatter ex form
+-submit button on form
+-make price text bigger
+
+REVISION 2:
+mobile responsiveness
+1080p responsiveness

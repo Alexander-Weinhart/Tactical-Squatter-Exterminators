@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tactical Squatter Exterminators</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <div class="block">
+                <div class="logo">
+                    <a href="home.html">
+                        <img src="img/logo.svg" alt="TSE Logo">
+                    </a>
+                </div>
+                <button id="hamb">
+                    <i class="fa-solid fa-bars icon"></i>
+                </button>
+                <button id="xButton" class="hide">
+                    <i class="fa-solid fa-x icon"></i>
+                </button>
+            </div>
+            <div id="list" class="hide">
+                <ul class="listitems">
+                    <li class="links"><a href="contact.html">Inquire</a></li>
+                    <li class="links"><a href="merch.html">Merch</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="lip"></div>
+        <div class="main">
+            <div id="form-box">
+                <div id="title-box">
+                    <h1>Squatter Extermination Form</h1>
+                </div>
+                <form id="form">
+                    <div id="field">
+                        <label for="fullNm-field" id="label">Your Full Name</label>
+                        <input type="text" id="fullNm-field" placeholder="Justin Carrey" required>
+                        <div id="error-fullNm"><span></span></div>
+                    </div>
+                    <div id="field">
+                        <label for="email-field" id="email-label">Email</label>
+                        <input type="text" id="email-field" placeholder="asianandy@gmail.com" onkeyup="validateEmail()">
+                        <div id="error-email"><span></span></div>
+                    </div>
+                    <div id="field">
+                        <label for="squatNum-field" id="label">How many squatters are we exterminating?</label>
+                        <input type="number" id="squatNum-field" placeholder="leave blank if you do not know">
+                    </div>
+                    <div id="field">
+                        <label for="squatNm-field" id="label">All Known Names Of Squatters (separated by commas)</label>
+                        <input type="text" id="squatNm-field" placeholder="Mary Swanson, Joe, Jack Gregory">
+                    </div>
+                
+                    <div id="field">
+                        <label for="squat-pics" id="label">Upload Face Pics of Squatters if Possible</label>
+                        <input type="file" id="squat-pics" name="squat-pics">
+                    </div>
+                    <div id="field">
+                        <label for="fire-field" id="label">Do the squatters have a firearm?</label>
+                        <div id="radio">
+                            <input type="radio" id="fire1" name="fire-field" itemid="fire-field" value="yes" required>
+                            <label for="fire1">Yes</label>
+                        </div>
+                        <div id="radio">
+                            <input type="radio" id="fire2" name="fire-field" itemid="fire-field" value="no">
+                            <label for="fire2">No</label>
+                        </div>
+                        <div id="radio">
+                            <input type="radio" id="fire3" name="fire-field" itemid="fire-field" value="idk">
+                            <label for="fire3">I don't know.</label>
+                        </div>                     
+                    </div>
+                    <div id="field">
+                        <label for="edge-field" id="label">Do the squatters have an edged weapon? (knives, swords, katanas, bayonets, puncturing tools)</label>
+                        <div id="radio">
+                            <input type="radio" id="edge1" name="edge-field" itemid="edge-field" value="yes" required>
+                            <label for="edge1">Yes</label>
+                        </div>
+                        <div id="radio">
+                            <input type="radio" id="edge2" name="edge-field" itemid="edge-field" value="no">
+                            <label for="edge2">No</label>
+                        </div>
+                        <div id="radio">
+                            <input type="radio" id="edge3" name="edge-field" itemid="edge-field" value="idk">
+                            <label for="edge3">I don't know.</label>
+                        </div>                     
+                    </div>
+                    <div id="field">
+                        <label for="poss-field" id="label">Would you consider the squatters to be possessive of the property?</label>
+                        <div id="radio">
+                            <input type="radio" id="poss1" name="poss-field" itemid="poss-field" value="yes" required>
+                            <label for="poss">Yes</label>
+                        </div>
+                        <div id="radio">
+                            <input type="radio" id="poss2" name="poss-field" itemid="poss-field" value="no">
+                            <label for="poss2">No</label>
+                        </div>
+                        <div id="radio">
+                            <input type="radio" id="poss3" name="poss-field" itemid="poss-field" value="idk">
+                            <label for="poss3">I don't know.</label>
+                        </div>                     
+                    </div>
+                    <div id="field">
+                        <label for="agress-field" id="label">How aggressive is the most aggressive squatter?<br>
+                            left means the squatter is Mother Theresa,<br>
+                            right means the squatter is a cannibal.  </label>
+                            <input type="range" id="agress-field" name="agress-field" min="0" max="10">
+                    </div>
+                    <div id="field">
+                        <button type="submit">Submit</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+
+        <div class="lip"></div>
+        <div class="footer">
+            <div class="row2">
+                <div class="copy1">
+                    <a href="index.html"><img class="logo" src="img/logo.svg" alt="TSE Logo"></a>
+                    <div class="copy2">
+                        <p id="copy">ERROR 1</p>
+                    </div>
+                </div>
+                <div class="socials">
+                    <a href="mailto:alex@onlinedesignsbyalex.com">
+                        <img src="img/icons/email.svg" alt="Email Address">
+                    </a>
+                    <a href="tel:+5133347931">
+                        <img src="img/icons/phone.svg" alt="Phone Number">
+                    </a>
+                    <a href="http://facebook.com">
+                        <img src="img/icons/facebook.svg" alt="Facebook Page">
+                    </a>
+                    <a href="http://x.com">
+                        <img src="img/icons/twitter.svg" alt="Twitter Page">
+                    </a>
+                    <a href="http://instagram.com">
+                        <img src="img/icons/instagram.svg" alt="Instagram Page">
+                    </a>
+                    <a href="http://twitch.com">
+                        <img src="img/icons/twitch.svg" alt="Twitch Page">
+                    </a>
+                    <a href="https://www.youtube.com/@O-Flock">
+                        <img src="img/icons/youtube.svg" alt="YouTube Page">
+                    </a>
+                    <a href="http://tiktok.com">
+                        <img src="img/icons/tiktok.svg" alt="TikTok Page">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+
+</html>
